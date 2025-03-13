@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Asrak0/movie-service.git'
+                git branch: 'main', url: 'https://github.com/Asrak0/movie-service.git'
             }
         }
         stage('Build') {
